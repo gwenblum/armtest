@@ -15,10 +15,11 @@ $ResourceGroupName = ${Env:ResourceGroupName}
 $StartTime = Get-Date
 $EndTime = $startTime.AddHours(2.0)
 
-##### Create a VDH archive zip
+##### Create a file with VHD extension
 
 $timestamp = (Get-Date -Format 'yyMMddhhmmss')
 $vhdBlobName = 'fake-vhd-disk-{0}.vhd' -f $timestamp
+New-Item -Force -Type File -Name $vhdBlobName
 
 ##### Storage account
 

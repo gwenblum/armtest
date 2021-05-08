@@ -231,9 +231,9 @@
             "type": "string",
             "value": "[reference(variables('deploymentScriptNameCreateSource')).outputs.uriVHDBlobSasToken]"
         },
-        "uriStorageAccountBlobContainerWritableSasToken": {
+        "uriWritableStorageAccountBlobContainerSasToken": {
             "type": "string",
-            "value": "[reference(variables('deploymentScriptNameCreateDestination')).outputs.uriStorageAccountBlobContainerWritableSasToken]"
+            "value": "[reference(variables('deploymentScriptNameCreateDestination')).outputs.uriWritableStorageAccountBlobContainerSasToken]"
         }
     }
 }

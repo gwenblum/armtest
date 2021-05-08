@@ -91,7 +91,7 @@
       }
     },
     "variables": {
-        "deploymentScriptFileUriCreateSource": "[uri(parameters('_artifactsLocation'), concat('CreateVHDBlobUrl.ps1', parameters('_artifactsLocationSasToken')))]",
+        "deploymentScriptFileUriCreateSource": "[uri(parameters('_artifactsLocation'), concat('CreateVHDBlobUri.ps1', parameters('_artifactsLocationSasToken')))]",
         "deploymentScriptFileUriCreateDestination": "[uri(parameters('_artifactsLocation'), concat('CreateWritableBlobContainerUri.ps1', parameters('_artifactsLocationSasToken')))]",
  
         "userAssignedIdentityName": "[concat('ImportVHD-FromZipArchive-Prereq-worker-',uniqueString(resourceGroup().id))]",

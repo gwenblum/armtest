@@ -33,7 +33,7 @@
           "description": "Version of Riverbed AppResponse"
         }        
       },
-      "uriAppResponseVhdBlob" : {
+      "applianceSourceImageBlobUri" : {
         "type": "string",
         "metadata": {
           "description": "uri of the Blob containing the AppResponse VHD image source. For example: https://your-source-storage-account.blob.core.windows.net/vhd/rbt_ar11-VSCAN-AZURE-010-11.8.0-28924-07844.vhd"
@@ -263,7 +263,7 @@
           },          
           "parameters": {
             "Source": {
-              "value": "[parameters('uriAppResponseVhdBlob')]"
+              "value": "[parameters('applianceSourceImageBlobUri')]"
             },
             "Destination": {
               "value": "[reference(variables('linkedTemplateName_Create-WritableBlobContainerUri')).outputs.uriWritableStorageAccountBlobContainerSasToken.value]"
